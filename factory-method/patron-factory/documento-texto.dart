@@ -1,9 +1,11 @@
 import 'documento.dart';
 
 class DocumentoTexto implements Documento {
+
   @override
-  String generar(List<int> calificaciones) {
-    //Debe ser generado el documento de word
-    return 'Calificaciones: ${calificaciones.join(', ')}';
+  String generar(List<int> calificaciones){
+    // Aquí debe estar el proceso para crear el archivo de texto
+    return  'Calificaciones en formato texto : ${calicaciones.join(", ")}';
   }
+  
 }

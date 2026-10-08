@@ -2,9 +2,12 @@ import 'documento.dart';
 import 'dart:convert';
 
 class DocumentoJson implements Documento {
+
   @override
-  String generar(List<int> calificaciones) {
-    //Debe ser generado el documento de word
+  Sring generar(List<int> calificaciones){
+    // Aquí debe implementarse el proceso de creación de archivo json
     return jsonEncode({'calificaciones': calificaciones});
   }
+
+
 }
