@@ -1,9 +1,8 @@
-import facade.proyector.dart;
-import facade.sistema-audio.dart;
-import facade.reproductor.dart;
+import 'proyector.dart';
+import 'reproductor.dart';
+import 'sistema-audio.dart';
 
-
-void main(){
+void main() {
   final proyector = Proyector();
   final audio = SistemaAudio();
   final reproductor = Reproductor();
@@ -16,10 +15,8 @@ void main(){
   // Sin facade, se llaman a cada clase y método necesarios
   // para lograr reproducir la película
 
-
   // Detener la película
   reproductor.detener();
   audio.apagar();
   proyector.apagar();
-
 }
